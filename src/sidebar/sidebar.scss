@@ -1,0 +1,43 @@
+.SidebarContainer {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  // left: -250px;
+  background-color: #0c1a25;
+  border-right: 1px solid #29343c;
+  color: #656d74;
+  left: 0px;
+  -webkit-transform: translateX(-80%);
+  transform: translateX(-80%);
+  transition: transform 200ms ease-in;
+  &.isOpen {
+    // left: 0;
+    -webkit-transform: none;
+    transform: none;
+    transition: transform 200ms ease-in;
+  }
+  .SidebarIcon {
+    float: right;
+    margin: 10px;
+    font-size: 24px;
+  }
+  .SidebarList {
+      list-style: none;
+      left: 0;
+      margin-left: 0;
+      margin-top: 50px;
+      padding: 0;
+
+      li {
+        padding-left: 50px;
+        height: 60px;
+        line-height: 60px;
+        vertical-align: middle;
+          &:hover {
+            color: #b5bec2;
+            background-color: #2c3c46;
+            border-left: 2px solid #258871;
+          }
+      }
+  }
+}

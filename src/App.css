@@ -1,22 +1,43 @@
-.App {
-  text-align: center;
-}
+html {
+  overflow: hidden;
+  height: 100%; }
 
-.App-logo {
-  height: 40vmin;
-}
+body {
+  background: #212d37;
+  background: linear-gradient(90deg, #212d37 0%, #384c5a 73%);
+  height: 100%;
+  overflow: auto; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* or inline-flex */
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin-left: 40px; }
 
-.App-link {
-  color: #09d3ac;
-}
+.movieListing {
+  width: 185px;
+  /* Or whatever */
+  height: 300px;
+  /* Or whatever */
+  margin: auto;
+  margin: 40px;
+  margin-top: 50px;
+  text-align: left;
+  transition: all .5s linear; }
+
+.movieListing img {
+  -webkit-box-shadow: 5px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  width: 185px;
+  height: auto;
+  transition: all .5s linear; }
+
+.movieTitle {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #939ca2; }
+
+.movieGenres {
+  color: #616d77; }
